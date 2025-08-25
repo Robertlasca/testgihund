@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - Tienda "Sarahí"</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/animations.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-solid">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="/images/logo.png" alt="Logo Tienda Sarahí" class="logo-img" />
+                <h2>Tienda "Sarahí"</h2>
+                <span>Premium Oils</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Inicio</a>
+                <a href="productos.html" class="nav-link active">Productos</a>
+                <a href="acerca.html" class="nav-link">Nosotros</a>
+                <a href="contacto.html" class="nav-link">Contacto</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Nuestros Productos</h1>
+            <p>Descubre nuestra amplia gama de aceites premium</p>
+        </div>
+    </section>
+
+    <!-- Product Filters -->
+    <section class="product-filters">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="auto">Automóviles</button>
+                <button class="filter-btn" data-filter="moto">Motocicletas</button>
+                <button class="filter-btn" data-filter="filtros">Otros Productos</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="products-section">
+        <div class="container">
+            <div class="products-grid" id="products-grid">
+                <!-- Auto Products -->
+                <div class="product-card" data-category="auto">
+                    <div class="product-image">
+                        <div class="product-badge">Premium</div>
+                        <img src="./images/GRASABENTONABARDAHL250GGRASAPARABALEROSBENTONABARDAHLCOLORAMARILLABOTE250GMAXIMARESISTENCIAENALTASTEMPERATURAS.webp" alt="GRASA PARA BALEROS BENTONA BARDAHL">
+                        <div class="product-overlay">
+                            <button class="quick-view-btn">Vista Rápida</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>GRASA PARA BALEROS BENTONA BARDAHL</h3>
+                        <p>ES UNA GRASA LUBRICANTES PARA BALEROS QUE TRABAJAN A ALTAS VELOCIDADES Y ALTAS TEMPERATURAS , DONDE SE NECESITA UNA GRASA QUE NO ESCURRA POR LA ALTA TEMPERATURA DE TRABAJO.</p>
+                        <div class="product-specs">
+                            <span><i class="fas fa-car"></i> Para Autos</span>
+                            <span><i class="fas fa-thermometer-half"></i> BENTONA ALTA TEMPERATURA</span>
+                        </div>
+                        <div class="product-price">$55.00</div>
+                        <button class="whatsapp-btn" onclick="contactWhatsApp('GRASA PARA BALEROS BENTONA BARDAHL')">
+                            <i class="fab fa-whatsapp"></i>
+                            Consultar por WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+
+                <div class="product-card" data-category="auto">
+                    <div class="product-image">
+                        <div class="product-badge">SAE 10W-30 </div>
+                        <img src="./images/hondasaew30.jpeg" alt="Aceite de motor SAE 10W-30">
+                    </div>
+                    <div class="product-info">
+                        <h3>Aceite Honda</h3>
+                        <p>Aceite de Genuino Honda.</p>
+                        
+                        <div class="product-specs">
+                            <span><i class="fas fa-filter"></i>Motores de gasolina</span>
+                            <span><i class="fas fa-car"></i> Para auto</span>
+                        </div>
+                        <div class="product-price">$Consulta precio</div>
+                        <button class="whatsapp-btn" onclick="contactWhatsApp('Aceite de motor SAE 10W-30')">
+                            <i class="fab fa-whatsapp"></i>
+                            Consultar por WhatsApp
+                        </button>
+                    </div>
+                </div>
+                
+
+                <!-- Moto Products -->
+                <div class="product-card" data-category="moto">
+                    <div class="product-image">
+                        <div class="product-badge">4T</div>
+                        <img src="./images/motul510015w.jpg" alt="MOTUL 5100 15W-50 4T">
+                    </div>
+                    <div class="product-info">
+                        <h3>MOTUL 5100 15W-50 4T</h3>
+                        <p>Motos de carretera, trails, cross, enduro, trial… equipos de motores 4 tiempos con cajas de velocidades integradas o no y embrague bañado en aceite o en seco, motores diseñados para utilizar lubricantes de baja viscosidad.</p>
+                        <div class="product-overlay">
+                            <button class="quick-view-btn">Vista Rápida</button>
+                        </div>
+                        <div class="product-specs">
+                            <span><i class="fas fa-motorcycle"></i> Para Motos</span>
+                            <span><i class="fas fa-thermometer-half"></i> 15W-50</span>
+                        </div>
+                        <div class="product-price">$200.00</div>
+                        <button class="whatsapp-btn" onclick="contactWhatsApp('MOTUL 5100 15W-50 4T')">
+                            <i class="fab fa-whatsapp"></i>
+                            Consultar por WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="moto">
+                    <div class="product-image">
+                        <div class="product-badge">2T</div>
+                        <img src="./images/raloy4t.webp" alt="RALOY CUATRO TIEMPOS JASO MA2 SAE 20W-50">
+                    </div>
+                    <div class="product-info">
+                        <h3>RALOY CUATRO TIEMPOS JASO MA2 SAE 20W-50</h3>
+                        <p>Es un lubricante especialmente diseñado para motocicletas donde la lubricación debe de realizarse simultáneamente al motor y a la transmisión.</p>
+                        <div class="product-overlay">
+                            <button class="quick-view-btn">Vista Rápida</button>
+                        </div>
+                        <div class="product-specs">
+                            <span><i class="fas fa-motorcycle"></i> Para Motos</span>
+                            <span><i class="fas fa-thermometer-half"></i>20W-50</span>
+                        </div>
+                        <div class="product-price">$105.00</div>
+                        <button class="whatsapp-btn" onclick="contactWhatsApp('RALOY CUATRO TIEMPOS JASO MA2 SAE 20W-50')">
+                            <i class="fab fa-whatsapp"></i>
+                            Consultar por WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="moto">
+                    <div class="product-image">
+                        <div class="product-badge">4T</div>
+                        <img src="./images/motul3000.webp" alt="MOTUL 3000 4T 20W-50">
+                    </div>
+                    <div class="product-info">
+                        <h3>MOTUL 3000 4T 20W-50</h3>
+                        <p>Motos de carretera, trail, cross… equipadas con motores de 4 tiempos con caja de velocidades integrada o no, y embrague bañado en aceite o en seco, motos equipadas con catalizadores en el escape o no. Grado SAE 20W-50  apta para motores refrigerados por aire.</p>
+                        <div class="product-overlay">
+                            <button class="quick-view-btn">Vista Rápida</button>
+                        </div>
+                        <div class="product-specs">
+                            <span><i class="fas fa-motorcycle"></i> Para Motos</span>
+                            <span><i class="fas fa-thermometer-half"></i> 20W-50</span>
+                        </div>
+                        <div class="product-price">$180.00</div>
+                        <button class="whatsapp-btn" onclick="contactWhatsApp('MOTUL 3000 4T 20W-50')">
+                            <i class="fab fa-whatsapp"></i>
+                            Consultar por WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+               
+
+                <!-- Filtros -->
+                <div class="product-card" data-category="filtros">
+                    <div class="product-image">
+                        <div class="product-badge">Filtro</div>
+                        <img src="./images/purolator filtro-aceite.jpg" alt="Filtro Aceite Tl10111">
+                    </div>
+                    <div class="product-info">
+                        <h3>Filtro Aceite Tl10111</h3>
+                        <p>Compatible con la mayoría de vehículos. Por favor revise que la pieza sea compatible con su auto. Si tiene duda, consúltenos desde la sección de preguntas (abajo de esta página).</p>
+                        <div class="product-overlay">
+                            <button class="quick-view-btn">Vista Rápida</button>
+                        </div>
+                        <div class="product-specs">
+                            <span><i class="fas fa-filter"></i>Filtro</span>
+                            <span><i class="fas fa-car"></i> Universal</span>
+                        </div>
+                        <div class="product-price">$75.00</div>
+                        <button class="whatsapp-btn" onclick="contactWhatsApp('Filtro Aceite Tl10111')">
+                            <i class="fab fa-whatsapp"></i>
+                            Consultar por WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="filtros">
+                    <div class="product-image">
+                        <div class="product-badge">Filtro</div>
+                        <img src="./images/filtro_457.jpg" alt="Filtro Aceite  TECH TL24457">
+                    </div>
+                    <div class="product-info">
+                        <h3>Filtro Aceite  TECH TL24457</h3>
+                        <p>Por favor revise que la pieza sea compatible con su auto. Si tiene duda, consúltenos desde la sección de preguntas (abajo de esta página).</p>
+                        <div class="product-overlay">
+                            <button class="quick-view-btn">Vista Rápida</button>
+                        </div>
+                        <div class="product-specs">
+                            <span><i class="fas fa-filter"></i>Purolator</span>
+                            <span><i class="fas fa-car"></i> TL24457</span>
+                        </div>
+                        <div class="product-price">$75.00</div>
+                        <button class="whatsapp-btn" onclick="contactWhatsApp('Filtro Aceite  TECH TL24457')">
+                            <i class="fab fa-whatsapp"></i>
+                            Consultar por WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="filtros">
+                    <div class="product-image">
+                        <div class="product-badge">Kit</div>
+                        <img src="./images/capacitor.jpeg" alt="Capacitor de Arranque">
+                    </div>
+                    <div class="product-info">
+                        <h3>Capacitor de Arranque</h3>
+                        <p>Para motores electricos.</p>
+                        <div class="product-overlay">
+                            <button class="quick-view-btn">Vista Rápida</button>
+                        </div>
+                        <div class="product-specs">
+                            <span><i class="fas fa-filter"></i>Para Automovil</span>
+                            <span><i class="fas fa-car"></i> Universal</span>
+                        </div>
+                        <div class="product-price">$130.00</div>
+                        <button class="whatsapp-btn" onclick="contactWhatsApp('Capacitor de Arranque')">
+                            <i class="fab fa-whatsapp"></i>
+                            Consultar por WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+
+                <div class="product-card" data-category="filtros">
+                    <div class="product-image">
+                        <div class="product-badge">Kit</div>
+                        <img src="./images/slider_block_kit.jpg" alt="Soporte de Cilindro">
+                    </div>
+                    <div class="product-info">
+                        <h3>Soporte de Cilindro</h3>
+                        <p>Slider Block Kit.</p>
+                        <div class="product-overlay">
+                            <button class="quick-view-btn">Vista Rápida</button>
+                        </div>
+                        <div class="product-specs">
+                            <span><i class="fas fa-filter"></i>Para Automovil</span>
+                            <span><i class="fas fa-car"></i> Universal</span>
+                        </div>
+                        <div class="product-price">$35.00</div>
+                        <button class="whatsapp-btn" onclick="contactWhatsApp('Soporte de Cilindro')">
+                            <i class="fab fa-whatsapp"></i>
+                            Consultar por WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="filtros">
+                    <div class="product-image">
+                        <div class="product-badge">Bujía de encendido</div>
+                        <img src="./images/bujia_ngk.jpg" alt="Bujía de encendido">
+                    </div>
+                    <div class="product-info">
+                        <h3>Bujía de encendido por pieza</h3>
+                        <p>Piezas de repuesto directas para automóviles.</p>
+                        <div class="product-overlay">
+                            <button class="quick-view-btn">Vista Rápida</button>
+                        </div>
+                        <div class="product-specs">
+                            <span><i class="fas fa-filter"></i>Para Motocicleta</span>
+                            <span><i class="fas fa-car"></i> Universal</span>
+                        </div>
+                        <div class="product-price">$40.00</div>
+                        <button class="whatsapp-btn" onclick="contactWhatsApp('Bujía de encendido)">
+                            <i class="fab fa-whatsapp"></i>
+                            Consultar por WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="filtros">
+                    <div class="product-image">
+                        <div class="product-badge">Filtro</div>
+                        <img src="./images/filtro_457.jpg" alt="Filtro Aceite  TECH TL24457">
+                    </div>
+                    <div class="product-info">
+                        <h3>Filtro Aceite  TECH TL14612</h3>
+                        <p>Filtro de Aceite de Motor Purolator para Tiida, Versa, March, D22, Frontier, Sentra, Juke, Rogue, Altima L32, L33, X-Trail</p>
+                        <div class="product-overlay">
+                            <button class="quick-view-btn">Vista Rápida</button>
+                        </div>
+                        <div class="product-specs">
+                            <span><i class="fas fa-filter"></i>Purolator</span>
+                            <span><i class="fas fa-car"></i> TL14612</span>
+                        </div>
+                        <div class="product-price">$65.00</div>
+                        <button class="whatsapp-btn" onclick="contactWhatsApp('Filtro Aceite  TECH TL14612')">
+                            <i class="fab fa-whatsapp"></i>
+                            Consultar por WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+
+                <div class="product-card" data-category="filtros">
+                    <div class="product-image">
+                        <div class="product-badge">Filtro</div>
+                        <img src="./images/filtro_combustible.jpg" alt="Filtro Combustible">
+                    </div>
+                    <div class="product-info">
+                        <h3>Filtro Combustible</h3>
+                        <p>GONHER ofrece más de 300 filtros para combustible, los cuales brindan el más alto rendimiento y están diseñados específicamente para los motores fuel injection modernos.</p>
+                        <div class="product-overlay">
+                            <button class="quick-view-btn">Vista Rápida</button>
+                        </div>
+                        <div class="product-specs">
+                            <span><i class="fas fa-filter"></i>Filtro</span>
+                            <span><i class="fas fa-car"></i> Maxima filtración</span>
+                        </div>
+                        <div class="product-price">$35.00</div>
+                        <button class="whatsapp-btn" onclick="contactWhatsApp('Filtro Combustible')">
+                            <i class="fab fa-whatsapp"></i>
+                            Consultar por WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="filtros">
+                    <div class="product-image">
+                        <div class="product-badge">Limpiador</div>
+                        <img src="./images/limpiador_carburador.webp" alt="Limpiador De Carburadores Y Partes Metalicas">
+                    </div>
+                    <div class="product-info">
+                        <h3>Limpiador De Carburadores </h3>
+                        <p>Y Partes Metalicas.</p>
+                        <div class="product-overlay">
+                            <button class="quick-view-btn">Vista Rápida</button>
+                        </div>
+                        <div class="product-specs">
+                            <span><i class="fas fa-filter"></i>Limpiador</span>
+                            <span><i class="fas fa-car"></i> Para automovil</span>
+                        </div>
+                        <div class="product-price">$90.00</div>
+                        <button class="whatsapp-btn" onclick="contactWhatsApp('Limpiador De Carburadores Y Partes Metalicas')">
+                            <i class="fab fa-whatsapp"></i>
+                            Consultar por WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+
+                <div class="product-card" data-category="filtros">
+                    <div class="product-image">
+                        <div class="product-badge">Chicote</div>
+                        <img src="./images/chicote_universal.webp" alt="Chicote Universal">
+                    </div>
+                    <div class="product-info">
+                        <h3>Chicote Universal</h3>
+                        <p>Permite un control suave y preciso del embrague.</p>
+                        
+                        <div class="product-specs">
+                            <span><i class="fas fa-filter"></i>Chicote Pieza</span>
+                            <span><i class="fas fa-car"></i> Para Motocicleta</span>
+                        </div>
+                        <div class="product-price">$13.00</div>
+                        <button class="whatsapp-btn" onclick="contactWhatsApp('Chicote Universal')">
+                            <i class="fab fa-whatsapp"></i>
+                            Consultar por WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+
+                <div class="product-card" data-category="filtros">
+                    <div class="product-image">
+                        <div class="product-badge">Repuesto de Frenos</div>
+                        <img src="./images/endurance.jpeg" alt="Repuesto de Frenos">
+                    </div>
+                    <div class="product-info">
+                        <h3>Frenos</h3>
+                        <p>Estan diseñadas para una menor distancia de frenado.</p>
+                        
+                        <div class="product-specs">
+                            <span><i class="fas fa-filter"></i>Repuesto de Frenos</span>
+                            <span><i class="fas fa-car"></i> Endurance</span>
+                        </div>
+                        <div class="product-price">$Consultar por WhatsApp</div>
+                        <button class="whatsapp-btn" onclick="contactWhatsApp('Repuesto de Frenos')">
+                            <i class="fab fa-whatsapp"></i>
+                            Consultar por WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+
+                <div class="product-card" data-category="auto">
+                    <div class="product-image">
+                        <div class="product-badge">Valvoline vr1 </div>
+                        <img src="./images/sae40Api.jpg" alt="Aceite de motor SAE 40">
+                    </div>
+                    <div class="product-info">
+                        <h3>Racing motor oil sae 40</h3>
+                        <p>Aceite de motor de alto rendimiento.</p>
+                        
+                        <div class="product-specs">
+                            <span><i class="fas fa-filter"></i>Motores de gasolina</span>
+                            <span><i class="fas fa-car"></i> Para auto</span>
+                        </div>
+                        <div class="product-price">$130.00</div>
+                        <button class="whatsapp-btn" onclick="contactWhatsApp('Aceite de motor SAE 40')">
+                            <i class="fab fa-whatsapp"></i>
+                            Consultar por WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+                
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <h3>El Rinconcito</h3>
+                        <p>Tu tienda de confianza para aceites premium</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Navegación</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="acerca.html">Nosotros</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Productos</h4>
+                    <ul>
+                        <li><a href="productos.html">Aceites para Auto</a></li>
+                        <li><a href="productos.html">Aceites para Moto</a></li>
+                        <li><a href="productos.html">Aceites Diesel</a></li>
+                        <li><a href="productos.html">Filtros</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> +52 951 300 3563</p>
+                        <p><i class="fas fa-envelope"></i> Proximamente</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Reforma #2, San Sebastian Teitipac</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Tienda "Sarahí". Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/529513003563" target="_blank" class="whatsapp-float-btn">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/products.js"></script>
+</body>
+</html>

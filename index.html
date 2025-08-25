@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda "Sarahí" - Aceites Premium para Vehículos</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/animations.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="/images/logo.png" alt="Logo Tienda Sarahí" class="logo-img" />
+                <h2>Tienda "Sarahí"</h2>
+                <span>Premium Aceites</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Inicio</a>
+                <a href="productos.html" class="nav-link">Productos</a>
+                <a href="acerca.html" class="nav-link">Nosotros</a>
+                <a href="contacto.html" class="nav-link">Contacto</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="title-line">El Mejor</span>
+                    <span class="title-line">Aceite</span>
+                    <span class="title-line">Para Tu Vehículo</span>
+                </h1>
+                <p class="hero-description">
+                    Descubre nuestra exclusiva colección de aceites de motor de alta calidad 
+                    para motos y automóviles. Protección superior que tu vehículo merece.
+                </p>
+                <div class="hero-buttons">
+                    <a href="productos.html" class="btn btn-primary">
+                        <span>Ver Productos</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="contacto.html" class="btn btn-secondary">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>WhatsApp</span>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="floating-card">
+                    <div class="oil-bottle">
+                        <div class="bottle-cap"></div>
+                        <div class="bottle-body">
+                            <div class="bottle-label">
+                                <span>Premium</span>
+                                <span>Aceite</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>¿Por Qué Elegir Tienda "Sarahí"?</h2>
+                <p>Ofrecemos la mejor calidad y servicio personalizado</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>Calidad Premium</h3>
+                    <p>Aceites de las mejores marcas con certificaciones de calidad</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shipping-fast"></i>
+                    </div>
+                    <h3>Acuerdo de entrega</h3>
+                    <p>Se puede establecer un punto de entrega vía WhatsApp.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Asesoría Técnica</h3>
+                    <p>Te ayudamos a elegir el aceite perfecto para tu vehículo, ya que contamos con un técnico certificado en el área.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Garantía Total</h3>
+                    <p>Productos 100% originales con garantía de fábrica</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Preview -->
+    <section class="products-preview">
+        <div class="container">
+            <div class="section-header">
+                <h2>Productos Destacados</h2>
+                <p>Nuestra selección de aceites más populares</p>
+            </div>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="product-badge">Premium</div>
+                        <img src="./images/motul510015w.jpg" alt="Aceite para Motos">
+                    </div>
+                    <div class="product-info">
+                        <h3>MOTUL 5100 15W-50 4T</h3>
+                        <p>Motos de carretera, trails, cross, enduro, trial… equipos de motores 4 tiempos con cajas de velocidades integradas o no y embrague bañado en aceite o en seco, motores diseñados para utilizar lubricantes de baja viscosidad.</p>
+                        <div class="product-price">$200.00</div>
+                        <button class="whatsapp-btn" onclick="contactWhatsApp('MOTUL 5100 15W-50 4T')">
+                            <i class="fab fa-whatsapp"></i>
+                            Consultar
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="product-badge">Moto</div>
+                        <img src="./images/raloy4t.webp" alt="Aceite para Motos">
+                    </div>
+                    <div class="product-info">
+                        <h3>RALOY CUATRO TIEMPOS JASO MA2 SAE 20W-50</h3>
+                        <p>Es un lubricante especialmente diseñado para motocicletas donde la lubricación debe de realizarse simultáneamente al motor y a la transmisión.</p>
+                        <div class="product-price">$105.00</div>
+                        <button class="whatsapp-btn" onclick="contactWhatsApp('RALOY CUATRO TIEMPOS JASO MA2 SAE 20W-50')">
+                            <i class="fab fa-whatsapp"></i>
+                            Consultar
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="product-badge">Motos</div>
+                        <img src="./images/motul3000.webp" alt="Aceite">
+                    </div>
+                    <div class="product-info">
+                        <h3>MOTUL 3000 4T 20W-50</h3>
+                        <p>Motos de carretera, trail, cross… equipadas con motores de 4 tiempos con caja de velocidades integrada o no, y embrague bañado en aceite o en seco, motos equipadas con catalizadores en el escape o no. Grado SAE 20W-50  apta para motores refrigerados por aire.</p>
+                        <div class="product-price">$190.00</div>
+                        <button class="whatsapp-btn" onclick="contactWhatsApp('MOTUL 3000 4T 20W-50')">
+                            <i class="fab fa-whatsapp"></i>
+                            Consultar
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="view-all-btn">
+                <a href="productos.html" class="btn btn-primary">Ver Todos los Productos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number" data-target="500">0</div>
+                    <div class="stat-label">Clientes Satisfechos</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="50">0</div>
+                    <div class="stat-label">Productos Disponibles</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="5">0</div>
+                    <div class="stat-label">Años de Experiencia</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="24">0</div>
+                    <div class="stat-label">Horas de Atención</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>¿Necesitas Asesoría Personalizada?</h2>
+                <p>Nuestros técnico te ayuda a elegir el aceite perfecto para tu vehículo</p>
+                <a href="contacto.html" class="btn btn-primary btn-large">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>Contactanos Ahora</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <h3>Tienda "Sarahí"</h3>
+                        <p>Tu tienda de confianza para aceites premium</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Navegación</h4>
+                    <ul>
+                        <li><a href="#home">Inicio</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="acerca.html">Nosotros</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Productos</h4>
+                    <ul>
+                        <li><a href="productos.html">Aceites para Auto</a></li>
+                        <li><a href="productos.html">Aceites para Moto</a></li>
+                        <li><a href="productos.html">Aceites Diesel</a></li>
+                        <li><a href="productos.html">Filtros</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> +52 951 300 3563</p>
+                        <p><i class="fas fa-envelope"></i> Proximamente</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Reforma N# 2, San Sebastian Teitipac</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Tienda "Sarahí". Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/529513003563" target="_blank" class="whatsapp-float-btn">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
